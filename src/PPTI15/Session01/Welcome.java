@@ -1,3 +1,5 @@
+package PPTI15.Session01;
+
 import java.util.Scanner;
 
 public class Welcome {
@@ -5,14 +7,15 @@ public class Welcome {
         System.out.println("Hello world!!");
         int a = 10;
         System.out.println("a = " + a);
-        double b = 22.0/7.0;
+        double b = 22.0 / 7.0;
         System.out.printf("b = %.2f\n", b);
         Scanner scan = new Scanner(System.in);
         String name = scan.nextLine();
         System.out.println("Name = " + name);
         switch (name) {
             case "Jefferson":
-                System.out.println("Selamat Pagi"); break;
+                System.out.println("Selamat Pagi");
+                break;
             default:
                 System.out.println("Selamat Siang");
         }
