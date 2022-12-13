@@ -15,6 +15,8 @@ public class Main {
         char kata[] = str.toCharArray();
         kata[6] = 'W';
         System.out.println(kata);
-
+        String str2 = str.replace("l", "7");
+        System.out.println(str2);
+        System.out.println(str);
     }
 }
