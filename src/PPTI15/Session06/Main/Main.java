@@ -4,6 +4,8 @@ import PPTI15.Session06.GatotKaca;
 import PPTI15.Session06.Hero;
 import PPTI15.Session06.Panji;
 
+import java.util.Scanner;
+
 public class Main {
     /*
     overloading
@@ -43,5 +45,14 @@ public class Main {
         System.out.println("HP p2= " + p2.getHp());
         System.out.println("HP p3= " + p3.getHp());
         System.out.println("HP p4= " + p4.getHp());
+
+        Hero p;
+        Scanner in = new Scanner(System.in);
+        int a =in.nextInt();
+        if (a == 1) {
+            p = new GatotKaca();
+        } else {
+            p = new Panji();
+        }
     }
 }
