@@ -1,5 +1,7 @@
 package PPTI16.Session06.Main;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main3 {
@@ -27,10 +29,15 @@ public class Main3 {
             };
             poke.atk = 90;
         }
+        System.out.println("Poke: " + poke);
         System.out.println("Atk: " + poke.atk);
         poke.attack();
         poke.skill();
+//        if (poke instanceof Pokemon) {
+//            System.out.println("turunan pokemon");
+//        }
         if (poke instanceof Charizard) {
+//            poke.ulti
             ((Charizard)poke).ulti();
         }
     }
@@ -41,6 +48,12 @@ abstract class Pokemon {
     int hp;
     abstract void attack();
     abstract void skill();
+
+    @Override
+    public String toString() {
+//        super.toString();
+        return this.getClass().getName() + " " + atk + " " + hp;
+    }
 }
 
 class Pikachu extends Pokemon {
