@@ -1,7 +1,6 @@
 package PPTI15.Session03;
 
 import java.util.ArrayList;
-import java.util.Collections;
 import java.util.Scanner;
 import java.util.Vector;
 
@@ -14,6 +13,7 @@ public class Main {
         array_list();
         // int n = sc.nextInt();
     }
+
     static Scanner sc = new Scanner(System.in);
 
     // method
@@ -27,7 +27,7 @@ public class Main {
         System.out.println(score.get(1));
         System.out.println("size: " + score.size());
         for (int i = 0; i < 100; i++) {
-            score.add((int)(Math.random() * 1000));
+            score.add((int) (Math.random() * 1000));
         }
         // Collections.sort(score);
         // score.sort(Main::compare);
@@ -51,8 +51,8 @@ public class Main {
     }
 
     static int compare(int a, int b) {
-        if(a == b) return 0;
-        if(a > b) return -1;
+        if (a == b) return 0;
+        if (a > b) return -1;
         return 1;
     }
 }

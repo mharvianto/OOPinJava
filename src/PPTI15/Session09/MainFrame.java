@@ -4,8 +4,7 @@ import javax.swing.*;
 import java.awt.*;
 import java.awt.event.*;
 
-public class MainFrame extends JFrame implements ActionListener, WindowListener, MouseListener, MouseMotionListener
-{
+public class MainFrame extends JFrame implements ActionListener, WindowListener, MouseListener, MouseMotionListener {
     public static void main(String[] args) {
         new MainFrame();
     }
@@ -24,7 +23,7 @@ public class MainFrame extends JFrame implements ActionListener, WindowListener,
         }
     };
 
-    public MainFrame(){
+    public MainFrame() {
         btn.addActionListener(this);
         btn2.addActionListener(this);
         btn3.addActionListener(actionBtn3);
@@ -42,13 +41,13 @@ public class MainFrame extends JFrame implements ActionListener, WindowListener,
     @Override
     public void actionPerformed(ActionEvent e) {
         System.out.println("Click");
-        if(e.getSource() == btn) {
+        if (e.getSource() == btn) {
             JOptionPane.showMessageDialog(this, "Hello world!");
             String nama = JOptionPane.showInputDialog("Masukkan Nama:");
             System.out.println("Nama: " + nama);
             int result = JOptionPane.showConfirmDialog(this, "Yakin?");
             System.out.println("Button: " + result);
-        } else if(e.getSource() == btn2) {
+        } else if (e.getSource() == btn2) {
             JOptionPane.showMessageDialog(null, "Ini Footer");
         }
     }
@@ -85,7 +84,7 @@ public class MainFrame extends JFrame implements ActionListener, WindowListener,
 
     @Override
     public void mouseMoved(MouseEvent e) {
-        System.out.println("X: " + e.getX() + ", Y: " +e.getY());
+        System.out.println("X: " + e.getX() + ", Y: " + e.getY());
     }
 
     @Override

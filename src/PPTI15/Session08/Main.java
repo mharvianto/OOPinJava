@@ -6,7 +6,7 @@ import java.awt.*;
 public class Main {
     public static void main(String[] args) {
         try {
-            for (var item: UIManager.getInstalledLookAndFeels()) {
+            for (var item : UIManager.getInstalledLookAndFeels()) {
                 System.out.println(item.getClassName());
             }
             UIManager.setLookAndFeel("javax.swing.plaf.nimbus.NimbusLookAndFeel");

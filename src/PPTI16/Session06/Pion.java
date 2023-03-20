@@ -11,7 +11,7 @@ public class Pion extends Perwira {
     @Override
     public ArrayList<Sel> kemungkinanJalan() {
         ArrayList<Sel> jalans = new ArrayList<>();
-        if(getWarna() == WarnaEnum.PUTIH) {
+        if (getWarna() == WarnaEnum.PUTIH) {
             jalans.add(new Sel(posisi.col, posisi.row + 1));
         } else {
             jalans.add(new Sel(posisi.col, posisi.row - 1));

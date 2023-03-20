@@ -8,10 +8,10 @@ import java.awt.event.KeyEvent;
 import java.awt.event.KeyListener;
 import java.util.Random;
 
-public class GameFrame extends JFrame
-{
+public class GameFrame extends JFrame {
     private GamePanel panel = new GamePanel();
-    public GameFrame(){
+
+    public GameFrame() {
         add(panel);
         panel.setFocusable(true);
         setSize(400, 400);
@@ -24,8 +24,7 @@ public class GameFrame extends JFrame
     }
 }
 
-class GamePanel extends JPanel implements KeyListener
-{
+class GamePanel extends JPanel implements KeyListener {
     private int x = 100;
     private int y = 100;
 
@@ -38,6 +37,7 @@ class GamePanel extends JPanel implements KeyListener
     private Color randomColor() {
         return new Color(rand.nextInt(255), rand.nextInt(255), rand.nextInt(255));
     }
+
     private ActionListener ballAction = new ActionListener() {
         @Override
         public void actionPerformed(ActionEvent e) {
@@ -63,7 +63,7 @@ class GamePanel extends JPanel implements KeyListener
     public GamePanel() {
         addKeyListener(this);
         setDoubleBuffered(true);
-        timer = new Timer(1000/FPS, ballAction);
+        timer = new Timer(1000 / FPS, ballAction);
         timer.start();
     }
 
@@ -75,10 +75,18 @@ class GamePanel extends JPanel implements KeyListener
     @Override
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
-            case KeyEvent.VK_UP: y-=20; break;
-            case KeyEvent.VK_DOWN: y+=20; break;
-            case KeyEvent.VK_RIGHT: x+=20; break;
-            case KeyEvent.VK_LEFT: x-=20; break;
+            case KeyEvent.VK_UP:
+                y -= 20;
+                break;
+            case KeyEvent.VK_DOWN:
+                y += 20;
+                break;
+            case KeyEvent.VK_RIGHT:
+                x += 20;
+                break;
+            case KeyEvent.VK_LEFT:
+                x -= 20;
+                break;
         }
         System.out.println(e.getKeyCode());
         repaint();

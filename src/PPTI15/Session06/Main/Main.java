@@ -48,7 +48,7 @@ public class Main {
 
         Hero p;
         Scanner in = new Scanner(System.in);
-        int a =in.nextInt();
+        int a = in.nextInt();
         if (a == 1) {
             p = new GatotKaca();
         } else {

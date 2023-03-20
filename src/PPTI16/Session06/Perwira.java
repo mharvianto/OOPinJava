@@ -1,6 +1,5 @@
 package PPTI16.Session06;
 
-import java.security.KeyPair;
 import java.util.ArrayList;
 
 public abstract class Perwira {
@@ -23,7 +22,7 @@ public abstract class Perwira {
         this.posisi = new Sel(col, row);
     }
 
-//    protected ArrayList<Sel> kemungkinanJalan(){
+    //    protected ArrayList<Sel> kemungkinanJalan(){
 //        return new ArrayList<>();
 //    }
     public abstract ArrayList<Sel> kemungkinanJalan();

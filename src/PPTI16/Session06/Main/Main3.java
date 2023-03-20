@@ -1,7 +1,5 @@
 package PPTI16.Session06.Main;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Scanner;
 
 public class Main3 {
@@ -9,9 +7,9 @@ public class Main3 {
         Scanner sc = new Scanner(System.in);
         Pokemon poke;
         int t = sc.nextInt();
-        if(t == 1) {
+        if (t == 1) {
             poke = new Pikachu();
-        } else if(t == 2) {
+        } else if (t == 2) {
             poke = new Charizard();
         } else {
             // anonymous object
@@ -38,7 +36,7 @@ public class Main3 {
 //        }
         if (poke instanceof Charizard) {
 //            poke.ulti
-            ((Charizard)poke).ulti();
+            ((Charizard) poke).ulti();
         }
     }
 }
@@ -46,7 +44,9 @@ public class Main3 {
 abstract class Pokemon {
     int atk;
     int hp;
+
     abstract void attack();
+
     abstract void skill();
 
     @Override
@@ -57,7 +57,7 @@ abstract class Pokemon {
 }
 
 class Pikachu extends Pokemon {
-    public Pikachu (){
+    public Pikachu() {
         atk = 100;
     }
 
@@ -73,7 +73,7 @@ class Pikachu extends Pokemon {
 }
 
 class Charizard extends Pokemon {
-    public Charizard (){
+    public Charizard() {
         atk = 110;
     }
 
@@ -87,7 +87,7 @@ class Charizard extends Pokemon {
         System.out.println("Skill Charizard");
     }
 
-    void ulti(){
+    void ulti() {
         System.out.println("Skill Charizard Ulti");
     }
 }

@@ -8,6 +8,7 @@ import java.awt.event.KeyListener;
 public class GambarFrame extends JFrame {
 
     DrawPanel panel = new DrawPanel();
+
     GambarFrame() {
         add(panel);
         panel.revalidate();
@@ -28,8 +29,7 @@ public class GambarFrame extends JFrame {
     }
 }
 
-class DrawPanel extends JPanel implements KeyListener
-{
+class DrawPanel extends JPanel implements KeyListener {
     DrawPanel() {
         addKeyListener(this);
     }
@@ -58,7 +58,9 @@ class DrawPanel extends JPanel implements KeyListener
     @Override
     public void keyPressed(KeyEvent e) {
         switch (e.getKeyCode()) {
-            case KeyEvent.VK_DOWN: y++; break;
+            case KeyEvent.VK_DOWN:
+                y++;
+                break;
         }
         System.out.println("asd");
         repaint();

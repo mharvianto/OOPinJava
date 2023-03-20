@@ -34,7 +34,7 @@ public class Student {
     }
 
     public Student(String name, String className) {
-        id = "" + (long)(Math.random() * 4000000000L);
+        id = "" + (long) (Math.random() * 4000000000L);
         setName(name);
         this.className = className;
     }

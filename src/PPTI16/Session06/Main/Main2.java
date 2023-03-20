@@ -8,7 +8,7 @@ public class Main2 {
     ArrayList<Produk> produks = new ArrayList<>();
     ArrayList<Transaksi> transaksi = new ArrayList<>();
 
-    public Main2(){
+    public Main2() {
         Produk p = new Produk();
         p.name = "asd"; // 0
         p.harga = 1000;
@@ -58,19 +58,20 @@ public class Main2 {
         printTransaksi();
     }
 
-    void printProduk(){
-        for(Produk produk: produks){
+    void printProduk() {
+        for (Produk produk : produks) {
             System.out.println("Produk " + produk.print());
         }
         System.out.println();
     }
 
-    void printTransaksi(){
-        for(var q: transaksi){
+    void printTransaksi() {
+        for (var q : transaksi) {
             System.out.println("Transaksi " + q);
         }
         System.out.println();
     }
+
     public static void main(String[] args) {
         String a = "hore 1";
         String b = "hore 2";
@@ -79,8 +80,7 @@ public class Main2 {
     }
 }
 
-class Produk
-{
+class Produk {
     static int n = 1;
     String produkId;
     String name;
@@ -95,23 +95,23 @@ class Produk
     }
 }
 
-class ProdukLain extends Produk{
+class ProdukLain extends Produk {
 
     String merek;
+
     @Override
     public String print() {
         return super.print() + " " + merek;
     }
 }
 
-class Transaksi
-{
+class Transaksi {
     Produk produk;
     Integer jumlah;
     Integer harga;
 
     @Override
     public String toString() {
-        return produk.name + ", " + jumlah +", "+ harga +", "+ (jumlah * harga) + " " + super.toString();
+        return produk.name + ", " + jumlah + ", " + harga + ", " + (jumlah * harga) + " " + super.toString();
     }
 }

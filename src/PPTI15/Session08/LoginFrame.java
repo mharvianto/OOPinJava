@@ -3,8 +3,7 @@ package PPTI15.Session08;
 import javax.swing.*;
 import java.awt.*;
 
-public class LoginFrame extends JFrame
-{
+public class LoginFrame extends JFrame {
     private JLabel headerLabel = new JLabel("Login");
 
     private JPanel centerPanel = new JPanel(new GridLayout(2, 2));
@@ -17,7 +16,7 @@ public class LoginFrame extends JFrame
     private JPanel footerPanel = new JPanel();
     private JButton submitBtn = new JButton("Submit");
 
-    public LoginFrame(){
+    public LoginFrame() {
         headerLabel.setHorizontalAlignment(SwingConstants.CENTER);
         add(headerLabel, BorderLayout.NORTH);
 

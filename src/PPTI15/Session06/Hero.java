@@ -18,14 +18,15 @@ public abstract class Hero {
         return hp;
     }
 
-    public Hero () {
+    public Hero() {
         lvl = 1;
     }
-    public Hero (int lvl) {
+
+    public Hero(int lvl) {
         this.lvl = lvl;
     }
 
-    public void attack(Hero enemy){
+    public void attack(Hero enemy) {
         enemy.hp -= this.atk;
     }
 

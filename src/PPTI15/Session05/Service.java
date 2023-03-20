@@ -10,7 +10,7 @@ public class Service {
     protected String noHandphoneCustomer;
     protected String alamatAsal;
 
-    public Service(String plate, String noHandphoneCustomer,  String alamatAsal, String alamatTujuan) {
+    public Service(String plate, String noHandphoneCustomer, String alamatAsal, String alamatTujuan) {
         this.plate = plate;
         this.alamatTujuan = alamatTujuan;
         this.noHandphoneCustomer = noHandphoneCustomer;
@@ -54,19 +54,19 @@ public class Service {
     }
 }
 
-class Food extends Service
-{
+class Food extends Service {
     private ArrayList<String> products;
-    public Food(String plate, String noHandphoneCustomer,  String alamatAsal, String alamatTujuan) {
+
+    public Food(String plate, String noHandphoneCustomer, String alamatAsal, String alamatTujuan) {
         super(plate, noHandphoneCustomer, alamatAsal, alamatTujuan);
         products = new ArrayList<>();
     }
 }
 
-class Delivery extends Service
-{
+class Delivery extends Service {
     int berat;
-    public Delivery(String plate, String noHandphoneCustomer,  String alamatAsal, String alamatTujuan, int berat) {
+
+    public Delivery(String plate, String noHandphoneCustomer, String alamatAsal, String alamatTujuan, int berat) {
         super(plate, noHandphoneCustomer, alamatAsal, alamatTujuan);
         this.berat = berat;
     }

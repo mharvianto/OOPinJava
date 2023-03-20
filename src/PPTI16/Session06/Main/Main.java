@@ -1,11 +1,9 @@
 package PPTI16.Session06.Main;
 
-import PPTI16.Session06.Perwira;
 import PPTI16.Session06.Pion;
 import PPTI16.Session06.Sel;
 import PPTI16.Session06.WarnaEnum;
 
-import java.awt.*;
 import java.util.ArrayList;
 
 public class Main {
@@ -32,7 +30,7 @@ public class Main {
         Pion pion = new Pion('A', 2, WarnaEnum.PUTIH);
 
         ArrayList<Sel> jalan = pion.kemungkinanJalan();
-        for (Sel sel: jalan) {
+        for (Sel sel : jalan) {
             System.out.println("" + sel.col + sel.row);
         }
 

@@ -10,7 +10,7 @@ public class Main {
         int[][] duaD = new int[10][10];
         ArrayList<Integer> score = new ArrayList<>();
         for (int i = 0; i < 100; i++) {
-            score.add((int)(Math.random() * 1000));
+            score.add((int) (Math.random() * 1000));
         }
         // score.set(5, 5);
         // score.sort((a, b) -> a > b ? -1 : (a < b ? 1 : 0));
@@ -20,7 +20,7 @@ public class Main {
             System.out.println(score.get(i));
         }
         score.remove(0); // first
-        score.remove(score.size() -1); // last index
+        score.remove(score.size() - 1); // last index
         System.out.println(score.get(0));
         System.out.println("Size: " + score.size());
         score.clear();

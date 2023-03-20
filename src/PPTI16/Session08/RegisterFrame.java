@@ -3,8 +3,7 @@ package PPTI16.Session08;
 import javax.swing.*;
 import java.awt.*;
 
-public class RegisterFrame extends JFrame
-{
+public class RegisterFrame extends JFrame {
     JLabel headerLabel = new JLabel("Register");
 
     JPanel centerPanel = new JPanel();
@@ -15,7 +14,8 @@ public class RegisterFrame extends JFrame
 
     JPanel footerPanel = new JPanel();
     JButton submitBtn = new JButton("Submit");
-    public RegisterFrame(){
+
+    public RegisterFrame() {
         add(headerLabel, BorderLayout.NORTH);
 
         centerPanel.setLayout(new GridLayout(2, 2));

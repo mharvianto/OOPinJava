@@ -1,7 +1,6 @@
 package PPTI15.Session02;
 
 import java.math.BigInteger;
-import java.util.Locale;
 
 public class Main {
     public static void main(String[] args) {
