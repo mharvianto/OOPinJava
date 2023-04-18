@@ -104,6 +104,10 @@ class GamePanel extends JPanel implements KeyListener {
         drawBall(g);
     }
 
+    /**
+     * Fungsi ini untuk mengambarkan bola pada frame.
+     * @param g
+     */
     private void drawBall(Graphics g) {
         Graphics2D g2d = (Graphics2D) g;
         g2d.setColor(ballColor);

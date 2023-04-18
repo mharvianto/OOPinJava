@@ -16,6 +16,9 @@ public class Main extends JFrame implements ActionListener
             "1", "2", "3", "/",
             "0", ".", "+-", "="
     };
+    private JButton[] buttons = new JButton[] {
+            new JButton("ac"),
+    };
     private JPanel panel = new JPanel(new GridLayout(5, 4));
 
     private HashMap<String, Operation> operations = new HashMap<>();
